@@ -53,7 +53,7 @@ const WhackAMole: React.FC = () => {
           );
           return { ...prev, moles: newMoles };
         });
-      }, 800); // 通常のモグラの表示時間を短縮
+      }, 200); // 通常のモグラの表示時間を短縮
       
       return () => {
         clearInterval(moleTimer);
